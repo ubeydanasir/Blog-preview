@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+    align-items: center;
+    min-height: 100lvh;
+    display: flex;
+    font-family: "Figtree", sans-serif;
+    font-size: 17px;
+}
+.container{
+    max-width: 375px;
+    margin: 0 auto;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 18px;
+    border-radius: 17px;
+    border: 0.1rem solid black;
+    box-shadow: 0.8rem 0.8rem 0rem;
+    transition: box shadow 0.3s ease-in-out;
+    margin: 0;
+    align-items: center;
+   max-height: 50%;
+}
+.card .card-image img{
+    border-radius: 1rem;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    padding: 22px 10px;
+}
+.card .text span{
+    display: block;
+    background-color: hsl(47, 88%, 63%) ;
+    padding: 0.5rem;
+    font-weight: 800;
+    border-radius: 0.5rem;
+    width: 7rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.card .text h5{
+    margin: 1.5rem 0;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.card .text h1{
+    font-weight: 800;
+    /* margin-bottom: 0rem ; */
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.card .text p{
+    padding-top: 22px;
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+    font-size: 1rem;
+    max-width: 33rem;
+}
+.card .card-author{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.card .card-author img{
+    width: 3rem;
+}
+.card .card-author h2{
+    font-size: 1rem;
+    font-weight: 800;
+}
+.card:hover{
+    box-shadow: 1rem 1 rem 0rem black;
+}
+.card .text h1:hover {
+    color: hsl(47, 88%, 63%);
+}
